@@ -1,9 +1,7 @@
 import { MongoClient } from "mongodb";
 
 export async function connectDatabase() {
-  return await MongoClient.connect(
-    "mongodb+srv://aditya-0011:UaKTgAjKESgT0pMk@cluster0.gdrorud.mongodb.net/newsletter",
-  );
+  return await MongoClient.connect("");
 }
 
 export async function insertDocument(client, collection, document) {
